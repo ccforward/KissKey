@@ -1,13 +1,13 @@
 {
     "name": "KissKey",
     "version": "1.0",
-    "desc": "",
+    "desc": "快捷键组件",
     "cover": "",
     "tag":"shortcut key",
     "author": {
         "name": "晨辰",
         "email": "cc.ccking@gmail.com",
-        "page": ""
+        "page": "http://ccforward.net"
     },
     "type": "kissy-gallery",
     "type-url": "http://gallery.kissyui.com/guide"

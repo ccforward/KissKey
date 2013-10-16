@@ -8,6 +8,8 @@ KissKey是一个简单的快捷键组件
 * demo：[http://gallery.kissyui.com/KissKey/1.0/demo/index.html](http://gallery.kissyui.com/KissKey/1.0/demo/index.html)
 
 
+![KissKey](http://gtms01.alicdn.com/tps/i1/T1E9jHFotbXXbe6yUo-320-240.gif)
+
 ## 使用说明
 
 ### 初始化组件
