@@ -6,6 +6,7 @@ KissKey是一个简单的快捷键组件
 * 作者：chenchen
 * 标签：快捷键 shortcut key
 * demo：[http://gallery.kissyui.com/KissKey/1.0/demo/index.html](http://gallery.kissyui.com/KissKey/1.0/demo/index.html)
+* 浏览器支持：[http://ccforward.github.io/demos/kisskey/support.html](http://ccforward.github.io/demos/kisskey/support.html)
 
 
 ![KissKey](http://gtms01.alicdn.com/tps/i1/T1E9jHFotbXXbe6yUo-320-240.gif)

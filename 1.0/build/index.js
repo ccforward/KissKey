@@ -49,8 +49,8 @@ KISSY.add('gallery/KissKey/1.0/index',function(S){
             'f11': 122,
             'f12': 123,
             '?': 191, // Question mark
-            // 'minus': $.browser.opera ? [109, 45] : $.browser.mozilla ? 109 : [189, 109],
-            // 'plus': $.browser.opera ? [61, 43] : $.browser.mozilla ? [61, 107] : [187, 107]
+            // 'minus': S.UA.opera ? [109, 45] : S.UA.mozilla ? 109 : [189, 109],
+            // 'plus': S.UA.opera ? [61, 43] : S.UA.mozilla ? [61, 107] : [187, 107]
             'minus': [189, 109],
             'plus': [187, 107]
         },
