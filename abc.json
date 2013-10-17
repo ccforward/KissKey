@@ -3,12 +3,13 @@
     "version": "1.0",
     "desc": "快捷键组件",
     "cover": "",
-    "tag":"shortcut key",
+    "tag":"快捷键",
     "author": {
         "name": "晨辰",
         "email": "cc.ccking@gmail.com",
         "page": "http://ccforward.net"
     },
     "type": "kissy-gallery",
-    "type-url": "http://gallery.kissyui.com/guide"
+    "type-url": "http://gallery.kissyui.com/guide",
+    "githubName":"ccforward"
 }

@@ -6,45 +6,63 @@
     <script src="http://g.tbcdn.cn/kissy/k/1.3.0/kissy.js" charset="utf-8"></script>
     <link rel="stylesheet" href="http://g.tbcdn.cn/kissy/k/1.3.0/css/dpl/base-min.css">
     <style>
+    .wrap {
+        width: 990px;
+        margin: 20px auto;
+    }
     li {
         list-style: none;
         font-size: 18px;
         margin-top: 5px;
     }
+    .output {
+        color: #f0c;
+        font-size: 14px;
+        width: 500px;
+        height: 200px;
+        padding-top: 5px;
+    }
     #new_demo {
-        font-size: 20px;
+        display: block;
+        width: 640px;
+        font-size: 70px;
         margin:10px;
         font-weight: bold;
-        color: #333;
+        color: #1B76E9;
         font-family: 'microsoft yahei';
+    }
+    #new_demo:hover {
+        background-color: #ccc;
         text-decoration: underline;
     }
     </style>
 </head>
 <body>
-<h2>KissKey的demo</h2>
-<h3>按下如下快捷键</h3>
-<ul class="demo">
-    <li>1,7: <span id="print_1"></span></li>
-    <li>Ctrl + Enter: <span id="print_ctrl_enter"></span></li>
-    <li>ctrl+alt+shift+?: <span id="print_ctrl_alt_shift_question"></span></li>
-</ul>
-
-<a id="new_demo" href="http://ccforward.github.io/demos/kisskey/index.html">点此戳向详细demo</a>
+<div class="wrap">
+    <h2>KissKey的demo</h2>
+    <h3>按下如下快捷键</h3>
+    <ul class="demo">
+        <li>1,7(hold): <span id="print_1"></span></li>
+        <li>Ctrl + Enter(up): <span id="print_ctrl_enter"></span></li>
+        <li>ctrl+alt+shift+?(down): <span id="print_ctrl_alt_shift_question"></span></li>
+    </ul>
+    <textarea class="output" id="J_out" ></textarea>
+    <a id="new_demo" href="http://ccforward.github.io/demos/kisskey/index.html">点此戳向详细demo</a>
+</div>
 <script>
     var S = KISSY;
     var print = function(id) {
-        var node = document.getElementById('print_' + id);
-        node.innerHTML += 'OK ';
+        // document.getElementById('print_' + id).innerHTML += 'success ';
+        document.getElementById('J_out').innerHTML += id;
     };
 
     S.use('gallery/KissKey/1.0/index', function (S, KissKey) {
         var kissKey = new KissKey();
-        kissKey.add({type: 'hold', shortcutKeys: '1,7', callback: function() { print('1'); }});
+        kissKey.add({type: 'hold', shortcutKeys: '1,7', callback: function() { print('1 '); }});
 
-        kissKey.add({type: 'hold', shortcutKeys: 'ctrl+enter', callback: function() { print('ctrl_enter'); }});
+        kissKey.add({type: 'up', shortcutKeys: 'ctrl+enter', callback: function() { print('ctrl_enter '); }});
 
-        kissKey.add({type: 'down', shortcutKeys: 'ctrl+alt+shift+?', callback: function() { print('ctrl_alt_shift_question'); }});
+        kissKey.add({type: 'down', shortcutKeys: 'ctrl+alt+shift+?', callback: function() { print('ctrl_alt_shift_question '); }});
 
         kissKey.start();
     })

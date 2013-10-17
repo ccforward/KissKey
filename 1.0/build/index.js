@@ -150,7 +150,6 @@ KISSY.add('gallery/KissKey/1.0/index',function(S){
         // @param {String} list的名字  默认default  主要用在remove时方便  //TODO
          
         start: function(list) {
-            debugger;
             var self = this;
 
             list = list || 'default';

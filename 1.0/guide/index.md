@@ -60,10 +60,17 @@ KissKey是一个简单的快捷键组件
 ### 解除绑定
 	kissKey.stop();
 
-## 事件类型
+## 支持的事件类型
 * **down** &mdash; keydown 默认
 * **up** &mdash; keyup.
 * **hold** &mdash; 按下并且不松开.按下时会立即出发回调函数,并且一直重复直到keyup
+
+## 支持的按键
+* **组合键** &mdash; Shift Ctrl Alt
+* **数字字母** &mdash; 0-9 a-z(大小写不敏感)
+* **特殊按键1** &mdash; Backspace, Tab, Enter, Pause, CapsLock, Esc, Space, F1—F12(有浏览器兼容性问题和系统冲突问题),
+* **特殊按键2** &mdash; ←(left), ↑(up), →(right), ↓(down) ,PageUp, PageDown, End, Home, Insert, Delete, ? , (-(minus),+(plus)也可用,但略有兼容问题)
+* **小键盘**  暂时不支持(+ -有效)
 
 ## 绑定多个按键
 	kissKey.add({
@@ -85,3 +92,7 @@ KissKey是一个简单的快捷键组件
 		    },
 		    list: 'keyList'
 	});
+
+## 浏览器快捷键支持情况
+* 详细支持情况戳向此处：[http://ccforward.github.io/demos/kisskey/support.html](http://ccforward.github.io/demos/kisskey/support.html)
+![KissKey-support](http://pic.yupoo.com/ccking/Df4WTuzl/inSBo.jpg)
