@@ -70,8 +70,22 @@ KissKey是一个简单的快捷键组件
 * **组合键** &mdash; Shift Ctrl Alt
 * **数字字母** &mdash; 0-9 a-z(大小写不敏感)
 * **特殊按键1** &mdash; Backspace, Tab, Enter, Pause, CapsLock, Esc, Space, F1—F12(有浏览器兼容性问题和系统冲突问题),
-* **特殊按键2** &mdash; ←(left), ↑(up), →(right), ↓(down) ,PageUp, PageDown, End, Home, Insert, Delete, ? , (-(minus),+(plus)也可用,但略有兼容问题)
-* **小键盘**  暂时不支持(+ -有效)
+* **特殊按键2** &mdash; left(←), up(↑), right(→), down(↓) ,PageUp, PageDown, End, Home, Insert, Delete
+
+## 标点符号和小键盘使用说明
+* '?' : 问号 兼容小键盘的 "/"
+* 'minus' : - 兼容小键盘
+* 'plus' : + 兼容小键盘
+* 'semi' : 分号 ;
+* 'comma' : 逗号 ,
+* 'dot' : 句号 . 兼容小键盘
+* 'quot' : 引号 '
+* '[' : 左中括号
+* ']' : 右中括号
+* '\\\' : 顿号,要两个斜线
+* 'num0' ~ 'num9' :小键盘
+* '`'' : 波浪号
+
 
 ## 绑定多个按键
 	kissKey.add({
@@ -94,6 +108,14 @@ KissKey是一个简单的快捷键组件
 		    list: 'keyList'
 	});
 
+
+
+
 ## 浏览器快捷键支持情况
 * 详细支持情况戳向此处：[http://ccforward.github.io/demos/kisskey/support.html](http://ccforward.github.io/demos/kisskey/support.html)
 ![KissKey-support](http://pic.yupoo.com/ccking/Df4WTuzl/inSBo.jpg)
+
+
+
+## Changelog
+* 131018: 添加小键盘和特殊标点符号的支持
