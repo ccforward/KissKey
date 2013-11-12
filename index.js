@@ -3,7 +3,7 @@
  * @author 晨辰<cc.ccking@gmail.com>
  * @module KissKey
  **/
-KISSY.add(function(S){
+KISSY.add('KissKey', function(S){
     var E = S.Event,
         D = S.DOM;
 
